@@ -1,10 +1,18 @@
 # client.py
 
 import sys, socket, select
- 
+
+def welcome_message():
+    print ''
+    print "\n\n\t\t\t\tWELCOME TO CHATTY v1.0\t\t\n\t\t\t\t----------------------"
+    print "Chatty is an Open Source Python Command Line Chat App Built On Python Web Sockets"
+    print 'Author: Amitrajit Bose & Riddhi Nahata at University of Engineering & Management, Kolkata'
+    print 'This is a Minor Academic Project and Must Not Be Used For Emergency Communication Purpose'
+    print '\n'
+
 def chat_client():
     if(len(sys.argv) < 3) :
-        print 'Usage : python chat_client.py hostname port'
+        print 'Usage : python chat_client.py HOSTNAME PORT'
         sys.exit()
 
     host = sys.argv[1]
@@ -19,7 +27,8 @@ def chat_client():
     except :
         print 'Unable to connect'
         sys.exit()
-     
+    
+    welcome_message()
     print 'Connected to remote host. You can start sending messages'
     sys.stdout.write('[Me] '); sys.stdout.flush()
      
