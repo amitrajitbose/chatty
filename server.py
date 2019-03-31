@@ -25,8 +25,11 @@ def chat_server():
 
         # get the list sockets which are ready to be read through select
         # 4th arg, time_out  = 0 : poll and never block
-        read_sockets,write_sockets,error_sockets = select.select(SOCKET_LIST,[],[],0)
-      
+        try:
+            read_sockets,write_sockets,error_sockets = select.select(SOCKET_LIST,[],[],0)
+        except:
+            sys.exit("\n")
+        
         for sock in read_sockets:
             # a new connection request recieved
             if sock == server_socket: 
