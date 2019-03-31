@@ -1,4 +1,4 @@
-# chat_server.py
+# server.py
  
 import sys, socket, select
 
@@ -29,7 +29,7 @@ def chat_server():
             read_sockets,write_sockets,error_sockets = select.select(SOCKET_LIST,[],[],0)
         except:
             sys.exit("\n")
-        
+
         for sock in read_sockets:
             # a new connection request recieved
             if sock == server_socket: 
