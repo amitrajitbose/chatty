@@ -10,7 +10,14 @@ python 3.5 or above
 
 #### Usage
 
-- Step 1: Setting up the chat server `python3 server.py`
+- Step 1: Setting up the chat server `python3 server.py [HOSTNAME]`
+
+```
+Default Parameters
+------------------
+<Hostname> : '' //indicates connectivity via localhost
+```
+
 - Step 2: Connecting client to server `python3 client.py [HOSTNAME] [PORT]`
 
 ```
