@@ -13,9 +13,16 @@ python 3.5 or above
 - Step 1: Setting up the chat server `python3 server.py`
 - Step 2: Connecting client to server `python3 client.py [HOSTNAME] [PORT]`
 
+```
+Default Parameters
+------------------
+<Hostname> : localhost
+<Port>     : 7500
+```
+
 #### Example
 
-When running on localhost, it will be like `python3 client.py localhost 7500'
+When running on localhost, it will be like `python3 client.py`
 
 #### Author
 - [Amitrajit Bose](https://github.com/amitrajitbose)
