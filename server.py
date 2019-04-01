@@ -87,6 +87,10 @@ def broadcast (server_socket, sock, message):
                     SOCKET_LIST.remove(socket)
  
 if __name__ == "__main__":
+    try:
+        HOST = sys.argv[1]
+    except:
+        HOST = ''
     sys.exit(chat_server())
 
 
