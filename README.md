@@ -1,4 +1,6 @@
 # Chatty 1.0
+![version](https://img.shields.io/badge/version-1.0-orange.svg)
+[![npm](https://img.shields.io/npm/l/express.svg?style=flat)]()
 
 A simple command line based chat application implemented using Python sockets.
 
