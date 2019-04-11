@@ -35,3 +35,5 @@ When running on localhost, it will be like `python3 client.py`
 - [Amitrajit Bose](https://github.com/amitrajitbose)
 - [Riddhi Nahata](https://github.com/riddhinahata)
 
+#### Screenshot
+![Screenshot](https://raw.githubusercontent.com/amitrajitbose/chatty/master/screenshot.png)
